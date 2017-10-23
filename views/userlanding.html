@@ -1,0 +1,210 @@
+
+
+<!-- 
+<div layout="row" class="" layout-xs="column" layout-sm="column" style="display: flex;justify-content: center;" layout-margin >
+	<div  style="flex:1"  flex-order-xs="-1" flex-order-sm="-1">
+		<md-card style="background-color: #2bc3d7;padding: 10px;">
+		<md-card-title style="font-size: 25px;color: white">
+			Recents
+		</md-card-title>
+		<ul style="background-color: white">
+			<li ng-repeat="logo in logos track by $index">{{logo}}</li>
+		</ul>
+		</md-card>
+	</div>
+	<div  style="flex: 3" flex-order-xs="2" flex-order-sm="2"  >
+		<div ng-repeat="list in companies">
+			<md-card layout="row" style="display: flex;" >
+	        	<div style="width: 100%">   
+	        	<div style="width: 100%;height: 25%;">
+	        		<md-card-title layout="row">
+		        		<img src="images/amazon.png" class="img-thumbnail" style="width:60px; height: 60px;padding: 2px;" alt="Company Logo">
+			          <md-card-title-text style="padding-left: 5px;" >
+			            <span class="md-headline headfont">{{list.title}}</span>
+			            <span class="md-subhead">Rating<span>&nbsp;{{list.rating}}</span></span>
+			          </md-card-title-text>
+			        </md-card-title><hr>
+			        <div style="padding-left: 15px;" >
+			        <table >
+			        	<tr>
+			        		<th>Location</th>
+			        		<td>{{list.location}}</td>
+			        	</tr>
+			        	<tr>
+			        		<th>Keyskills</th>
+			        		<td>{{list.keyskills}}</td>
+			        	</tr>
+			        	<tr >
+			        		<th>jobtype</th>
+			        		<td>{{list.jobtype}}</td>
+			        	</tr>
+			        	<tr>
+			        		<th>Salary</th>
+			        		<td>{{list.salary}}</td>
+			        		
+			        	</tr>
+			        </table>
+				    </div>
+	        	</div>
+	        	
+	        	</div>
+
+
+	        	<div style="background-color:#2bc3d7;width:100%;display: flex;justify-content: center;align-content: center;" >   
+	        			<div layout="column">
+		        			<div style="height: 50%;">
+			        			<span  class="percentage" style="">{{list.percentage}}%</span><br>
+		        				
+		        			</div>
+		        			<div style="width: 100%;background-color: white;border-radius:5px;">
+							  <div style="width:{{list.percentage}}%;height: 3px;background-color: #64DD17;"></div>
+							</div>
+		        			<div>
+		        			<span class="fontP">
+		        				profile matched 
+		        			</span>
+		        			</div><br>
+		        			<div>
+		        				<md-button class="md-fab" aria-label="Use Android">
+						          <md-icon  ><a href="#!/3MINDIA" style="text-decoration: none;color: white">done</a></md-icon>
+						        </md-button>
+		        			</div>
+	        			</div>
+	        	</div>
+
+
+		    </md-card>
+        </div>
+	</div>
+	<div  style="flex:1;background-color:#f2f2f2;" flex-order-xs="1" flex-order-sm="1" >
+		<md-card style="background-color: #2bc3d7" >
+			<md-card-title>
+				<md-card-title-text class="trendingtab">Trending</md-card-title-text>
+			</md-card-title>
+			<hr>
+			<md-card-content>
+			<div ng-repeat="list in companies">
+				<div class="chip" style="padding-bottom: 5px;">
+					<img src="images/amazon.png" alt="Amazon" width="96" height="96">
+					<a style="text-decoration: none;padding-left: 5px;">{{list.title}}</a>
+
+				</div>
+				<br>
+			</div>
+			</md-card-content>
+		</md-card>
+	</div>
+</div> -->
+
+<div class="row" style="display: flex;justify-content: space-between;">
+	<div class="panel-group" style="width: 20%;margin-top: 50px;">
+		<div class="panel panel-default" style="background-color: #2bc3d7;width:100%;align-self: flex-start;box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);margin-top: 10px;">
+
+			<div style="text-align: center;color: black" class="fontP panel-heading">
+				<h4 class="panel-title">
+					
+					<span data-toggle="collapse" href="#Recents">Recents</span>
+				</h4>
+			</div>
+			<div id="Recents" class="panel-collapse ">
+				<ul class="list-group">
+					<li class="list-group-item" ng-repeat="logo in logos track by $index" >
+						
+						<a href="#!/{{logo}}"  style="text-decoration: none;font-weight: bold">{{logo}}&nbsp;</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="panel panel-default" style="background-color: #2bc3d7;width:100%;align-self: flex-start;box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);margin-top: 10px;">
+
+			<div style="text-align: center;color: black" class="fontP panel-heading">
+				<h4 class="panel-title">
+					
+					<span data-toggle="collapse" href="#Recents1">Watchlist</span>
+				</h4>
+			</div>
+			<div id="Recents1" class="panel-collapse collapse">
+				<ul class="list-group">
+					<li class="list-group-item" ng-repeat="logo in logos track by $index" >
+						
+						<a href="#!/{{logo}}"  style="text-decoration: none;font-weight: bold">{{logo}}&nbsp;</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+	</div>
+
+
+	<div class="" style="padding: 0px 5px 0px 5px;width:50%;margin-top: 10px;">
+
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="padding-bottom:10px;" ng-repeat="list in companies">
+	            <div class="box" style="background-color: #2bc3d7">
+	                <div class="box-icon">
+	                    <span > <img src="images/amazon.png" alt="Amazon" width="96" height="96" style="vertical-align: middle;border-radius: 50%;"></span>
+	                </div>
+	                <div class="" style="">
+	                    <h4 class="text-center" style="color: white">{{list.title}}</h4>
+	                    <div class="row" style="display: flex;justify-content: space-between;">
+	                    	
+		                    <div style="padding-left: 0px;color: white;font-size: 15px" >
+					        	<table >
+					        	<tr>
+					        		<th>Location</th>
+					        		<td>{{list.location}}</td>
+					        	</tr>
+					        	<tr>
+					        		<th>Keyskills</th>
+					        		<td>{{list.keyskills}}</td>
+					        	</tr>
+					        	<tr >
+					        		<th>jobtype</th>
+					        		<td>{{list.jobtype}}</td>
+					        	</tr>
+					        	<tr>
+					        		<th>Salary</th>
+					        		<td>{{list.salary}}</td>
+					        		
+					        	</tr>
+						        </table>
+						    </div>
+
+				            <div class="column" >
+					        			<div style="height: 50%;padding-bottom: 5px;">
+						        			<span  class="percentage" style="">{{list.percentage}}%</span><br>
+					        				
+					        			</div>
+					        			<div style="width: 100%;background-color: white;border-radius:5px;">
+										  <div style="width:{{list.percentage}}%;height: 3px;background-color: #64DD17;"></div>
+										</div>
+					        			<div style="padding-bottom: 5px;">
+					        			<span class="fontP">
+					        				profile matched 
+					        			</span>
+					        			</div><br>
+					        			
+				        	</div>
+	                    </div>
+	                    <a href="#!/{{list.code}}" class="btn" style="color: white">More</a>
+	                </div>
+	            </div>
+
+	           
+	    </div>
+
+	</div>
+	<div class="" style="width:20%;align-self: flex-start;margin-top: 10px;">
+		<div style="text-align: center;color: black" class="fontP">Trending
+		</div>
+		<br>
+		
+		<div ng-repeat="list in companies">
+				<div class="chip" style="padding-bottom: 5px;background-color: #2bc3d7;box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);">
+					<img src="images/amazon.png" alt="Amazon" width="96" height="96">
+					<a style="text-decoration: none;padding-left: 5px;color: white">{{list.title}}</a>
+
+				</div>
+				<br>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,19 @@
+
+<div style="width: 100%;justify-content: center;display: flex;">
+	<div ng-contoller="logoDetailsController" style="overflow: hidden;display: flex;">
+		<div class="logoDetailTable"  style="width: 100%;height: 850px;overflow-y: scroll;padding-top: 30px;">
+			<table class="table table-hover  table-responsive">
+			<thead>
+				<tr>
+					<th ng-repeat="title in titles">{{title}}</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr ng-repeat="data in logodatas">
+					<td ng-repeat="value in data track by $index" class="filterable-cell">{{value}}</td>
+				</tr>
+			</tbody>
+			</table>
+		</div>
+	</div>
+</div>

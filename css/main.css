@@ -1,0 +1,221 @@
+.linkdecoration{
+	text-decoration: none;
+	color: white;
+  cursor: pointer;
+}
+.wcolor{
+  color: white;
+}
+.navbarclass{
+  margin: 5px;
+  background-color: #2bc3d7 !important;
+  /*display: flex;
+  justify-content: space-between;
+*/
+}
+th,td{
+  padding:2px 5px 3px 5px;
+  font-family: 'Encode Sans Expanded', sans-serif;
+  font-weight: normal;
+}
+
+.headfont{
+  font-family: 'Raleway', sans-serif;
+}
+
+md-card md-card-title {
+     padding: 0px 5px 0px 5px !important; 
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 auto;
+    flex: 1 1 auto;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+}
+
+.searchLable{
+  color: white;
+  font-size: 25px;
+  font-family: 'Poiret One', cursive;
+  /*border-color: white;*/
+}
+
+.trendingtab{
+  font-size: 25px;
+  font-family: 'Poiret One', cursive;
+  font-weight: bold;
+  color: white;
+  align-items: center;
+}
+
+hr {
+     margin-top: 2px !important; 
+     margin-bottom: 2px !important; 
+    border: 0;
+    border-top: 1px solid #eee;
+}
+
+.md-button.md-default-theme.md-fab, .md-button.md-fab {
+     background-color:transparent !important; 
+    color: rgb(255,255,255) !important;
+}
+
+
+.logo{
+  /*font-family: 'Rock Salt', cursive;*/
+  font-family: 'Encode Sans Expanded', sans-serif;
+  font-size: 34px;
+  font-weight: bold;
+  color: white;
+}
+
+.percentage{
+  font-family: 'Poiret One', cursive;
+  font-size: 60px;
+  color:white;
+}
+
+.fontP{
+  font-family: 'Poiret One', cursive;
+  color:white;
+  font-size: 20px;
+  font-weight: bold;
+}
+a:hover, a:focus {
+    color: #fff;
+    text-decoration: none;
+}
+
+md-content.md-default-theme, md-content {
+    color: white;
+    background-color:#2bc3d7; 
+}
+
+md-nav-bar .md-button._md-nav-button.md-unselected {
+    color:white;
+    align-content: center;
+    justify-content: center;
+    padding-top: 2px;
+    /*padding-top: 10px;*/
+    /*border-style: none;*/
+}
+
+.md-nav-bar {
+    border-style: none !important;
+    border-width: 0 0 1px;
+    height: 48px;
+    position: relative;
+
+}
+
+.inputwidth{
+	style="width: 60%;
+}
+.tredninglist{
+	list-style: none;
+	text-decoration: none;
+}
+.logoDetailTable{
+ display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.table {
+  background-color: #eee;
+  height: 100%;
+  margin-bottom: 0;
+}
+.table-responsive {
+  height: 100%;
+  max-height:300px;
+}
+
+.chip {
+    /*display: inline-block;*/
+    /*padding: 0 25px;*/
+    height: 50px;
+    font-size: 16px;
+    line-height: 50px;
+    border-radius: 25px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+}
+
+.chip img {
+    float: left;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.badge {
+    display: inline-block;
+    min-width: 10px;
+    padding: 2px 5px 5px;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+   /* background-color: #777;*/
+    border-radius: 10px;
+    
+}
+
+/************************************* modal login*******************/
+md-dialog.md-transition-in {
+    opacity: 1;
+    -webkit-transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+    -webkit-transform: translate(0, 0) scale(1);
+    transform: translate(0, 0) scale(1);
+    width: 50% !important;
+}
+/********************/
+
+/**************** signup ***/
+.signup,.login{
+  font-family: 'Raleway', sans-serif;
+}
+
+
+/**************accordition************/
+#Recents ul li:first-child div { 
+    display:block;
+    border-top:3px solid #FFCDCD;
+} 
+/***************/
+
+/***********card box***********/
+.box {
+    border-radius: 3px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    padding: 10px 25px;
+    text-align: right;
+    display: block;
+    margin-top: 60px;
+}
+.box-icon {
+    
+    border-radius: 50%;
+    display: table;
+    height: 100px;
+    margin: 0 auto;
+    width: 100px;
+    margin-top: -61px;
+}
+.box-icon img {
+    color: #fff;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+/******************/

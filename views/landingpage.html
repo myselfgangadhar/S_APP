@@ -1,0 +1,15 @@
+<div style="width: 100%;">
+
+<div class="landingpage" ng-controller="landingpagecontroller" style="width: 100%;display: flex;">
+		<span style="color: white;font-size:25px;">Trending</span>
+		<md-nav-bar style="display: flex;">
+		       <a ng-repeat="list in lists" class="linkdecoration" ui-sref="{{list}}"><md-nav-item md-nav-click="goto('{{list}}')" name="{{list}}">{{list}}</md-nav-item></a>
+   	    </md-nav-bar>
+   	    <br>
+
+</div>
+<br>
+   	   <div style="width: 100%; display: flex;justify-content: center;height: 70%;">
+   	    <img src="images/NSE_Market.jpg" class="img-responsive img-rounded" alt="Cinque Terre">
+   	    </div>
+</div>
